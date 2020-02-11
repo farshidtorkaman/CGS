@@ -30,7 +30,7 @@ namespace CGS
                     Console.Write("Enter Artist First Name: ");
                     fname = Console.ReadLine();
                     condition = ArtistValidation.IsNameValid(fname);
-                    if(!condition)
+                    if (!condition)
                         Console.WriteLine("First name should be at most 40 character");
                 } while (!condition);
 
@@ -110,105 +110,151 @@ namespace CGS
 
         public static void AddArtPiece()
         {
-            if (ArtPieceCount < 10)
+            try
             {
-                bool condition;
-
-                string ID;
-                do
+                if (ArtPieceCount < 10)
                 {
-                    Console.Write("Enter ID: ");
-                    ID = Console.ReadLine();
-                    condition = ArtPieceValidation.IsIdValid(ID);
-                    if (!condition)
-                        Console.WriteLine("ID is not valid (Enter 5 Unique character)");
-                } while (!condition);
+                    bool condition;
 
-                string title;
-                do
+                    string ID;
+                    do
+                    {
+                        Console.Write("Enter ID: ");
+                        ID = Console.ReadLine();
+                        condition = ArtPieceValidation.IsIdValid(ID);
+                        if (!condition)
+                            Console.WriteLine("ID is not valid (Enter 5 Unique character)");
+                    } while (!condition);
+
+                    string title;
+                    do
+                    {
+                        Console.Write("Enter the title: ");
+                        title = Console.ReadLine();
+                        condition = IsTitleValid(title);
+                        if (!condition)
+                            Console.WriteLine("Title should be at most 40 character");
+                    } while (!condition);
+
+                    string date;
+                    do
+                    {
+                        Console.Write("Enter the date in year: ");
+                        date = Console.ReadLine();
+                        condition = IsDateValid(date);
+                        if (!condition)
+                            Console.WriteLine("Date must be 4 digits");
+                    } while (!condition);
+
+                    string IDArtist;
+                    do
+                    {
+                        Console.Write("Enter artist ID: ");
+                        IDArtist = Console.ReadLine();
+                        condition = ArtPieceValidation.IsArtistIdValid(IDArtist);
+                        if (!condition)
+                        {
+                            Console.WriteLine("Id Artist does not exist");
+                            string response;
+                            do
+                            {
+                                Console.Write("do you want to add this artist? (y/n): ");
+                                response = Console.ReadLine();
+                                if (response == "y" || response == "Y")
+                                {
+                                    AddArtist();
+                                }
+                                else if (response == "n" || response == "N")
+                                {
+                                    throw new Exception();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("invalid response");
+                                }
+                            } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
+                        }
+                    } while (!condition);
+
+                    string IDCurator;
+                    do
+                    {
+                        Console.Write("Enter curator ID: ");
+                        IDCurator = Console.ReadLine();
+                        condition = ArtPieceValidation.IsCuratorIdValid(IDCurator);
+                        if (!condition)
+                        {
+                            Console.WriteLine("Id Curator does not exist");
+                            string response;
+                            do
+                            {
+                                Console.Write("do you want to add this curator? (y/n): ");
+                                response = Console.ReadLine();
+                                if (response == "y" || response == "Y")
+                                {
+                                    AddArtist();
+                                }
+                                else if (response == "n" || response == "N")
+                                {
+                                    throw new Exception();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("invalid response");
+                                }
+                            } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
+                        }
+                    } while (!condition);
+
+                    string estimed;
+                    do
+                    {
+                        Console.Write("Enter Estimated Price: ");
+                        estimed = Console.ReadLine();
+                        condition = IsEstimedAndPriceValid(estimed);
+                        if (!condition)
+                            Console.WriteLine("Estimated Price must be digits");
+                    } while (!condition);
+
+                    string price;
+                    do
+                    {
+                        Console.Write("Enter the Price of the Art Piece: ");
+                        price = Console.ReadLine();
+                        condition = IsEstimedAndPriceValid(price);
+                        if (!condition)
+                            Console.WriteLine("Price must be digits");
+                    } while (!condition);
+
+                    string status;
+                    do
+                    {
+                        Console.Write("Enter the status: (You Should Enter --> D: Print pieces on display -- S: Print Sold Pieces -- O: Print pices in Storage\n");
+                        status = Console.ReadLine();
+                        condition = IsStatusValid(status);
+                        if (!condition)
+                            Console.WriteLine("Status should be D or S or O");
+                    } while (!condition);
+
+                    Data.MyArtPieces[ArtPieceCount].ID = ID;
+                    Data.MyArtPieces[ArtPieceCount].title = title;
+                    Data.MyArtPieces[ArtPieceCount].date = date;
+                    Data.MyArtPieces[ArtPieceCount].IDArtist = IDArtist;
+                    Data.MyArtPieces[ArtPieceCount].IDCurator = IDCurator;
+                    Data.MyArtPieces[ArtPieceCount].estimed = double.Parse(estimed == "" ? "0" : estimed);
+                    Data.MyArtPieces[ArtPieceCount].price = double.Parse(price == "" ? "0" : price);
+                    Data.MyArtPieces[ArtPieceCount].status = char.Parse(status);
+                    Console.WriteLine("Art Piece Added Succesfully");
+
+                    ArtPieceCount++;
+                }
+                else
                 {
-                    Console.Write("Enter the title: ");
-                    title = Console.ReadLine();
-                    condition = IsTitleValid(title);
-                    if (!condition)
-                        Console.WriteLine("Title should be at most 40 character");
-                } while (!condition);
-
-                string date;
-                do
-                {
-                    Console.Write("Enter the date in year: ");
-                    date = Console.ReadLine();
-                    condition = IsDateValid(date);
-                    if(!condition)
-                        Console.WriteLine("Date must be 4 digits");
-                } while (!condition);
-
-                string IDArtist;
-                do
-                {
-                    Console.Write("Enter artist ID: ");
-                    IDArtist = Console.ReadLine();
-                    condition = ArtPieceValidation.IsArtistIdValid(IDArtist);
-                    if (!condition)
-                        Console.WriteLine("Id Artist does not exist");
-                } while (!condition);
-
-                string IDCurator;
-                do
-                {
-                    Console.Write("Enter curator ID: ");
-                    IDCurator = Console.ReadLine();
-                    condition = ArtPieceValidation.IsCuratorIdValid(IDCurator);
-                    if (!condition)
-                        Console.WriteLine("Id Curator does not exist");
-                } while (!condition);
-
-                string estimed;
-                do
-                {
-                    Console.Write("Enter Estimated Price: ");
-                    estimed = Console.ReadLine();
-                    condition = IsEstimedAndPriceValid(estimed);
-                    if(!condition)
-                        Console.WriteLine("Estimated Price must be digits");
-                } while (!condition);
-
-                string price;
-                do
-                {
-                    Console.Write("Enter the Price of the Art Piece: ");
-                    price = Console.ReadLine();
-                    condition = IsEstimedAndPriceValid(price);
-                    if (!condition)
-                        Console.WriteLine("Price must be digits");
-                } while (!condition);
-
-                string status;
-                do
-                {
-                    Console.Write("Enter the status: (You Should Enter --> D: Print pieces on display -- S: Print Sold Pieces -- O: Print pices in Storage\n");
-                    status = Console.ReadLine();
-                    condition = IsStatusValid(status);
-                    if(!condition)
-                        Console.WriteLine("Status should be D or S or O");
-                } while (!condition);
-
-                Data.MyArtPieces[ArtPieceCount].ID = ID;
-                Data.MyArtPieces[ArtPieceCount].title = title;
-                Data.MyArtPieces[ArtPieceCount].date = date;
-                Data.MyArtPieces[ArtPieceCount].IDArtist = IDArtist;
-                Data.MyArtPieces[ArtPieceCount].IDCurator = IDCurator;
-                Data.MyArtPieces[ArtPieceCount].estimed = double.Parse(estimed == "" ? "0" : estimed);
-                Data.MyArtPieces[ArtPieceCount].price = double.Parse(price == "" ? "0" : price);
-                Data.MyArtPieces[ArtPieceCount].status = char.Parse(status);
-                Console.WriteLine("Art Piece Added Succesfully");
-
-                ArtPieceCount++;
+                    Console.WriteLine("You can not add anymore art piece");
+                }
             }
-            else
+            catch
             {
-                Console.WriteLine("You can not add anymore art piece");
             }
         }
 
