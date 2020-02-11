@@ -1,0 +1,66 @@
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS.deps.json
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS.runtimeconfig.json
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS.runtimeconfig.dev.json
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS.dll
+/home/farshid/Desktop/CGS/bin/Debug/netcoreapp3.1/CGS.pdb
+/home/farshid/Desktop/CGS/obj/Debug/netcoreapp3.1/CGS.csprojAssemblyReference.cache
+/home/farshid/Desktop/CGS/obj/Debug/netcoreapp3.1/CGS.AssemblyInfoInputs.cache
+/home/farshid/Desktop/CGS/obj/Debug/netcoreapp3.1/CGS.AssemblyInfo.cs
+/home/farshid/Desktop/CGS/obj/Debug/netcoreapp3.1/CGS.dll
+/home/farshid/Desktop/CGS/obj/Debug/netcoreapp3.1/CGS.pdb
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.exe
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.deps.json
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.json
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.dev.json
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.csprojAssemblyReference.cache
+C:\Users\Farshid\Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfoInputs.cache
+C:\Users\Farshid\Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfo.cs
+C:\Users\Farshid\Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.exe
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.deps.json
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.json
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.dev.json
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\bin\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\obj\Debug\netcoreapp3.1\CGS.csprojAssemblyReference.cache
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfoInputs.cache
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfo.cs
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\obj\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Desktop\ComputerizedGallerySystem\CGS\obj\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.exe
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.deps.json
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.json
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.dev.json
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.csprojAssemblyReference.cache
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfoInputs.cache
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfo.cs
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farzad\Desktop\CDI\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.csprojAssemblyReference.cache
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfoInputs.cache
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfo.cs
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\obj\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.exe
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.deps.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.dev.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\bin\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.exe
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.deps.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.runtimeconfig.dev.json
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\bin\Debug\netcoreapp3.1\CGS.pdb
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.csprojAssemblyReference.cache
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfoInputs.cache
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.AssemblyInfo.cs
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.dll
+C:\Users\Farshid\Downloads\Telegram Desktop\CGS\CGS\obj\Debug\netcoreapp3.1\CGS.pdb
