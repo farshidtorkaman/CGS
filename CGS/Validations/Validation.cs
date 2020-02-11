@@ -8,9 +8,18 @@ namespace CGS.Validations
     {
         public static bool IsIdValid(string ID)
         {
-            bool condition = false;
-            if (ID.Length == 5)
-                condition = true;
+            bool condition = true;
+            if (ID.Length != 5)
+                return false;
+
+            foreach (var character in ID)
+            {
+                if (!Char.IsNumber(character))
+                {
+                    condition = false;
+                    break;
+                }
+            }
 
             return condition;
         }
