@@ -192,7 +192,7 @@ namespace CGS
                                 response = Console.ReadLine();
                                 if (response == "y" || response == "Y")
                                 {
-                                    AddArtist();
+                                    AddCurator();
                                 }
                                 else if (response == "n" || response == "N")
                                 {
@@ -260,6 +260,7 @@ namespace CGS
 
         public static void DisplayAllArtPieces()
         {
+            var arttt = Data.MyArtPieces;
             bool isEmpty = true;
             for (int i = 0; i < Data.MyArtPieces.Length; i++)
             {
@@ -284,6 +285,30 @@ namespace CGS
                 {
                     isExist = true;
                     Console.WriteLine($"ID = {ArtPieces.ID}, title = {ArtPieces.title}, date = {ArtPieces.date}, IDArtist = {ArtPieces.IDArtist}, IDCurator = {ArtPieces.IDCurator}, estimed = {ArtPieces.estimed}, price = {ArtPieces.price}, status = {ArtPieces.status}");
+                }
+            }
+            if (!isExist)
+                Console.WriteLine("Not Found!");
+        }
+
+        public static void DeleteArtPieceByCode(string code)
+        {
+            bool isExist = false;
+            for (int i = 0; i < Data.MyArtPieces.Length; i++)
+            {
+                if (Data.MyArtPieces[i].ID == code)
+                {
+                    isExist = true;
+                    Data.MyArtPieces[i].ID = null;
+                    Data.MyArtPieces[i].title = null;
+                    Data.MyArtPieces[i].date = null;
+                    Data.MyArtPieces[i].IDArtist = null;
+                    Data.MyArtPieces[i].IDCurator = null;
+                    Data.MyArtPieces[i].estimed = 0;
+                    Data.MyArtPieces[i].price = 0;
+                    Data.MyArtPieces[i].status = '\0';
+
+                    Console.WriteLine("Succesfully Deleted");
                 }
             }
             if (!isExist)

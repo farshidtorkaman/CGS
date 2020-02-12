@@ -34,7 +34,9 @@ namespace CGS
                         FindArtPieceByCode(code);
                         break;
                     case "6":
-                        Console.WriteLine("6");
+                        Console.Write("Enter Code : ");
+                        string artPieceCode = Console.ReadLine();
+                        DeleteArtPieceByCode(artPieceCode);
                         break;
                     case "7":
                         Console.WriteLine("Quiting Applicaion...");
