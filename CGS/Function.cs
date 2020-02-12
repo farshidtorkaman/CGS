@@ -151,29 +151,30 @@ namespace CGS
                     {
                         Console.Write("Enter artist ID: ");
                         IDArtist = Console.ReadLine();
-                        condition = ArtPieceValidation.IsArtistIdValid(IDArtist);
-                        if (!condition)
-                        {
-                            Console.WriteLine("Id Artist does not exist");
-                            string response;
-                            do
-                            {
-                                Console.Write("do you want to add this artist? (y/n): ");
-                                response = Console.ReadLine();
-                                if (response == "y" || response == "Y")
-                                {
-                                    AddArtist();
-                                }
-                                else if (response == "n" || response == "N")
-                                {
-                                    throw new Exception();
-                                }
-                                else
-                                {
-                                    Console.WriteLine("invalid response");
-                                }
-                            } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
-                        }
+                        condition = true;
+                        // condition = ArtPieceValidation.IsArtistIdValid(IDArtist);
+                        // if (!condition)
+                        // {
+                        //     Console.WriteLine("Id Artist does not exist");
+                        //     string response;
+                        //     do
+                        //     {
+                        //         Console.Write("do you want to add this artist? (y/n): ");
+                        //         response = Console.ReadLine();
+                        //         if (response == "y" || response == "Y")
+                        //         {
+                        //             AddArtist();
+                        //         }
+                        //         else if (response == "n" || response == "N")
+                        //         {
+                        //             throw new Exception();
+                        //         }
+                        //         else
+                        //         {
+                        //             Console.WriteLine("invalid response");
+                        //         }
+                        //     } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
+                        // }
                     } while (!condition);
 
                     string IDCurator;
@@ -181,29 +182,30 @@ namespace CGS
                     {
                         Console.Write("Enter curator ID: ");
                         IDCurator = Console.ReadLine();
-                        condition = ArtPieceValidation.IsCuratorIdValid(IDCurator);
-                        if (!condition)
-                        {
-                            Console.WriteLine("Id Curator does not exist");
-                            string response;
-                            do
-                            {
-                                Console.Write("do you want to add this curator? (y/n): ");
-                                response = Console.ReadLine();
-                                if (response == "y" || response == "Y")
-                                {
-                                    AddCurator();
-                                }
-                                else if (response == "n" || response == "N")
-                                {
-                                    throw new Exception();
-                                }
-                                else
-                                {
-                                    Console.WriteLine("invalid response");
-                                }
-                            } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
-                        }
+                        condition = true;
+                        // condition = ArtPieceValidation.IsCuratorIdValid(IDCurator);
+                        // if (!condition)
+                        // {
+                        //     Console.WriteLine("Id Curator does not exist");
+                        //     string response;
+                        //     do
+                        //     {
+                        //         Console.Write("do you want to add this curator? (y/n): ");
+                        //         response = Console.ReadLine();
+                        //         if (response == "y" || response == "Y")
+                        //         {
+                        //             AddCurator();
+                        //         }
+                        //         else if (response == "n" || response == "N")
+                        //         {
+                        //             throw new Exception();
+                        //         }
+                        //         else
+                        //         {
+                        //             Console.WriteLine("invalid response");
+                        //         }
+                        //     } while (!(response == "y" || response == "Y" || response == "n" || response == "N"));
+                        // }
                     } while (!condition);
 
                     string estimed;
@@ -296,7 +298,7 @@ namespace CGS
             bool isExist = false;
             for (int i = 0; i < Data.MyArtPieces.Length; i++)
             {
-                if (Data.MyArtPieces[i].ID == code)
+                if (Data.MyArtPieces[i].ID != null && Data.MyArtPieces[i].ID == code)
                 {
                     isExist = true;
                     Data.MyArtPieces[i].ID = null;
@@ -309,10 +311,17 @@ namespace CGS
                     Data.MyArtPieces[i].status = '\0';
 
                     Console.WriteLine("Succesfully Deleted");
+
+                    for (int j = i; j < Data.MyArtPieces.Length - 1; j++)
+                    {
+                        Data.MyArtPieces[j] = Data.MyArtPieces[j + 1];
+                    }
                 }
             }
             if (!isExist)
                 Console.WriteLine("Not Found!");
+
+            var arttt = Data.MyArtPieces;
         }
     }
 }
